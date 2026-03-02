@@ -23,7 +23,7 @@
 )
 
 (deflayer base
-  @ca @cs @cd @f @cj @ck @cl @c;
+  @ca @cs @cd @cf @cj @ck @cl @c;
 )
 
 (deflayer nomods
@@ -39,7 +39,9 @@
   (a    ) @a
   (  s  ) @s
   (    d) @d
+  (      f) @f
   
+  (f d s  ) tab
   (a s d) esc
 )
 
@@ -74,6 +76,7 @@
   ; (tap-hold-release-keys $tap-time $hold-time (multi ; @tap) rmet $right-hand-keys)
 
   ;; Left Hand Chord Triggers
+  cf (chord left-chords f)
   ca (chord left-chords a)
   cs (chord left-chords s)
   cd (chord left-chords d)
