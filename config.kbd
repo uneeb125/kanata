@@ -35,7 +35,7 @@
 )
 
 ;; -- Left Hand Chords --
-(defchords left-chords 100
+(defchords left-chords 150
   (a    ) @a
   (  s  ) @s
   (    d) @d
@@ -46,7 +46,7 @@
 )
 
 ;; -- Right Hand Chords --
-(defchords right-chords 100
+(defchords right-chords 150
   ;; Changed these back to @j and @k
   (j      ) @j
   (  k    ) @k
