@@ -2,6 +2,22 @@
   process-unmapped-keys yes
   ;; This allows multiple modifiers to be processed at the same time
   concurrent-tap-hold yes
+
+  ;; Only grab the keyboards actually used. This keeps the gamepad /
+  ;; Bluetooth / other transient "keyboard" devices from being grabbed,
+  ;; so their connect/disconnect churn cannot disturb input handling.
+  linux-dev-names-include (
+    "Pilot W-CORNE"
+    "Pilot W-CORNE Consumer Control"
+    "Pilot W-CORNE System Control"
+    "foostan Corne v4 Keyboard"
+    "Logitech USB Receiver"
+    "Logitech USB Receiver Consumer Control"
+  )
+
+  ;; If none of the above are present at startup, wait for them rather
+  ;; than exiting.
+  linux-continue-if-no-devs-found yes
 )
 
 (defsrc
