@@ -11,8 +11,6 @@
     "Pilot W-CORNE Consumer Control"
     "Pilot W-CORNE System Control"
     "foostan Corne v4 Keyboard"
-    "Logitech USB Receiver"
-    "Logitech USB Receiver Consumer Control"
   )
 
   ;; If none of the above are present at startup, wait for them rather
